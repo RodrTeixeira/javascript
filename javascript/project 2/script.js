@@ -14,20 +14,20 @@ function toCheck() {
         if (fsex[0].checked) {
             gender = "Homem"
             if (age > 0 && age < 10) {
-                img.setAttribute('src' , 'criancaM.jpg')
+                img.setAttribute('src' , './img/criancaM.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             } else if (age < 21) {
-                img.setAttribute('src' , 'jovemM.jpg')
+                img.setAttribute('src' , './img/jovemM.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             } else if (age < 60) {
-                img.setAttribute('src' , 'homem.jpg')
+                img.setAttribute('src' , './img/homem.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             }
                    else {
-                img.setAttribute('src' , 'idoso.jpg')
+                img.setAttribute('src' , './img/idoso.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
               }
@@ -35,25 +35,26 @@ function toCheck() {
         } else if (fsex[1].checked) {
             gender = "Mulher"
             if (age > 0 && age < 10) {
-                img.setAttribute('src' , 'criancaF.jpg')
+                img.setAttribute('src' , './img/criancaF.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             } else if (age < 21) {
-                img.setAttribute('src' , 'jovemF.jpg')
+                img.setAttribute('src' , './img/jovemF.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             } else if (age < 60) {
-                img.setAttribute('src' , 'mulher.jpg')
+                img.setAttribute('src' , './img/mulher.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
             }
                    else {
-                img.setAttribute('src' , 'idosa.jpg')
+                img.setAttribute('src' , './img/idosa.jpg')
                 img.setAttribute('width', '500')
                 img.setAttribute('height', '305')
               }
         }
-        res.innerHTML = "Idade Calculada " + age + " anos - " + gender
+        res.innerHTML = `Idade Calculada ${age} anos - ${gender}`
+        // res.innerHTML = "Idade Calculada " + age + " anos - " + gender
         res.append(img)
 
     }

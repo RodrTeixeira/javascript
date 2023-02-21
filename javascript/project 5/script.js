@@ -1,9 +1,9 @@
 let num = document.querySelector("input#fnum")
 let list = document.querySelector("select#flist")
 let res = document.querySelector("div#res")
-let res1 = document.querySelector("div#res1")
-let res2 = document.querySelector("div#res2")
-let res3 = document.querySelector("div#res3")
+//let res1 = document.querySelector("div#res1")
+//let res2 = document.querySelector("div#res2")
+//let res3 = document.querySelector("div#res3")
 let values = []
 
 // console.log(num)
@@ -32,10 +32,10 @@ function toAdd() {
         item.text = "Valor " + num.value +  " adicionado"
         list.appendChild(item)
         res.innerHTML = ""
-        res1.innerHTML = ""
-        res2.innerHTML = ""
-        res3.innerHTML = ""
-       // window.alert("Tudo OK!")
+        //res1.innerHTML = ""
+        //res2.innerHTML = ""
+        //res3.innerHTML = ""
+        //window.alert("Tudo OK!")
     } else {
         window.alert("Valor inválido ou já encontrado na lista")
     }
@@ -62,12 +62,12 @@ function finalize() {
         }
         
         res.innerHTML = ""
-        res1.innerHTML = ""
-        res2.innerHTML = ""
-        res.innerHTML = "<br>Ao todo temos " + tot + " números cadastrados"
-        res1.innerHTML = "<br>O maior valor informado foi " + bigger
-        res2.innerHTML = "<br>O menor valor informado foi " + smaller
-        res3.innerHTML = "<br>Somando todos os valores temos  " + sum
+        //res1.innerHTML = ""
+        //res2.innerHTML = ""
+        res.innerHTML += `<p>Ao todo temos ${tot} números cadastrados</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${bigger}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${smaller}</p>`
+        res.innerHTML += `<p>Somando todos os valores temos  ${sum}</p>`
         
     }
 }
