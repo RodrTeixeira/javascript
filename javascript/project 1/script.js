@@ -4,7 +4,7 @@ function load() {
     var date = new Date();
     var hour = date.getHours();
     msg.innerHTML = `Agora são ${hour} horas`;
-    // msg.innerHTML = "Agora são " + hour + " horas"
+    // msg.innerHTML = "Agora são " + hour + " horas";
     if (hour >= 0 && hour < 12) {
         img.src = "./img/manha.jpg";
         document.body.style.background = "#e2cd9f";
