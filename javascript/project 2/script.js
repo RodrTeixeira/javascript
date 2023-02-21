@@ -11,12 +11,17 @@ function toCheck() {
         var gender = ""
         var img = document.createElement("img")
         img.setAttribute("id", "photo")
+        function Attrib() {
+            img.setAttribute('width', '500')
+            img.setAttribute('height', '305')
+        }
         if (fsex[0].checked) {
             gender = "Homem"
             if (age > 0 && age < 10) {
                 img.setAttribute('src' , './img/criancaM.jpg')
-                img.setAttribute('width', '500')
-                img.setAttribute('height', '305')
+                Attrib()
+                //img.setAttribute('width', '500')
+                //img.setAttribute('height', '305')
             } else if (age < 21) {
                 img.setAttribute('src' , './img/jovemM.jpg')
                 img.setAttribute('width', '500')
