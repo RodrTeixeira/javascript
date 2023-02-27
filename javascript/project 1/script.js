@@ -6,13 +6,13 @@ function load() {
     msg.innerHTML = `Agora são ${hour} horas`;
     // msg.innerHTML = "Agora são " + hour + " horas";
     if (hour >= 0 && hour < 12) {
-        img.src = "./img/manha.jpg";
+        img.src = "./img/morning.jpg";
         document.body.style.background = "#e2cd9f";
     } else if (hour>= 12 && hour < 18) {
-        img.src = "./img/tarde.jpg";
+        img.src = "./img/afternoon.jpg";
         document.body.style.background = "#b9846f";
     } else {
-        img.src = "./img/noite.jpg";
+        img.src = "./img/night.jpg";
         document.body.style.background = "#515154";
     };
 };

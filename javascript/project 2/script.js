@@ -18,21 +18,21 @@ function toCheck() {
         if (fsex[0].checked) {
             gender = "Homem";
             if (age > 0 && age < 10) {
-                img.setAttribute('src' , './img/criancaM.jpg');
+                img.setAttribute('src' , './img/criancaMas.jpg');
                 Attrib();
                 //img.setAttribute('width', '500');
                 //img.setAttribute('height', '305');
             } else if (age < 21) {
-                img.setAttribute('src' , './img/jovemM.jpg');
+                img.setAttribute('src' , './img/jovemMas.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
             } else if (age < 60) {
-                img.setAttribute('src' , './img/homem.jpg');
+                img.setAttribute('src' , './img/man.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
             }
                    else {
-                img.setAttribute('src' , './img/idoso.jpg');
+                img.setAttribute('src' , './img/idosoM.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
               }
@@ -40,20 +40,20 @@ function toCheck() {
         } else if (fsex[1].checked) {
             gender = "Mulher";
             if (age > 0 && age < 10) {
-                img.setAttribute('src' , './img/criancaF.jpg');
+                img.setAttribute('src' , './img/criancaFem.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
             } else if (age < 21) {
-                img.setAttribute('src' , './img/jovemF.jpg');
+                img.setAttribute('src' , './img/jovemFem.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
             } else if (age < 60) {
-                img.setAttribute('src' , './img/mulher.jpg');
+                img.setAttribute('src' , './img/woman.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
             }
                    else {
-                img.setAttribute('src' , './img/idosa.jpg');
+                img.setAttribute('src' , './img/idosaF.jpg');
                 img.setAttribute('width', '500');
                 img.setAttribute('height', '305');
               };
