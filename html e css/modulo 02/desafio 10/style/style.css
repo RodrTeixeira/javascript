@@ -31,6 +31,10 @@ body {
     font-family: var(--default-font);
 }
 
+a.external::after {
+    content:"\00A0\1F517";
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--color3), var(--color5) );
     min-height: 150px;
@@ -42,6 +46,7 @@ header > h1 {
     color: white;
     font-family: var(--featured-font);
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px black;
 }
@@ -54,6 +59,7 @@ header > p {
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 0px black;
 }
 
@@ -64,7 +70,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: var(--color1);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -92,22 +98,81 @@ main {
 main h1 {
     color: var(--color5);
     font-family: var(--android-font);
+    font-weight: normal;
+    font-size: 1.8rem;
 }
 
 main img {
     width: 100%;
 }
 main img.small {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
+/* A div.video e a div.video > iframe sao necessarias para configurar o video do youtube
+para que ele se adapte ao tamanho da tela */
+
+div.video {
+    background-color: var(--color5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
 main h2 {
     font-family: var(--android-font);
+    color: var(--color4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    text-indent: 8px;
 }
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+aside > h3 {
+    background-color: var(--color4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
 
 footer {
     background-color: var(--color5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
