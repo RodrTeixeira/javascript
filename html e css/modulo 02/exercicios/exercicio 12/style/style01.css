@@ -1,0 +1,25 @@
+body {
+    background-image: url(../img/wallpaper001.jpg);
+}
+
+div.one {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+
+}
+
+div#o1 {
+    background-color: skyblue;
+}
+
+div#o2 {
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+
+div#o3 {
+    background-image: url(../img/pattern003.png);
+}
